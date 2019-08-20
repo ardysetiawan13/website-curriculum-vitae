@@ -4,6 +4,43 @@ body {
   color: #ffffff;
   margin-left: 45%; }
 
+nav.nav-top {
+  display: none;
+  background-color: #031275;
+  text-align: right;
+  padding: 4px;
+  padding-right: 16px; }
+  nav.nav-top .nav-item {
+    margin: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffff; }
+  nav.nav-top div.icon {
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-image: url("../images/profile.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 4px solid #031275;
+    z-index: 2; }
+  nav.nav-top div.greeting {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    background-color: #031275;
+    color: #ffffff;
+    padding: 8px 12px 8px 36px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 8px;
+    z-index: 1;
+    text-align: center; }
+    nav.nav-top div.greeting .title {
+      font-size: 10px; }
+
 .page {
   display: flex;
   align-items: center;
@@ -42,7 +79,8 @@ body {
 table.biodata {
   width: 100%; }
   table.biodata tr td {
-    vertical-align: top; }
+    vertical-align: top;
+    min-width: 100px; }
   table.biodata tr td:nth-child(1) {
     width: 35%;
     color: #FFE046; }
@@ -52,9 +90,11 @@ table.biodata {
     color: #ffffff;
     text-decoration: none; }
 
-table.table-legend tr td:nth-child(2) {
-  text-align: right;
-  width: 24px; }
+table.table-legend tr td {
+  vertical-align: top; }
+  table.table-legend tr td:nth-child(2) {
+    text-align: right;
+    width: 24px; }
 
 .skill-container > div {
   display: flex;
@@ -129,6 +169,13 @@ div.technology {
       font-size: 20px;
       color: #ffffff;
       margin: 4px 8px; }
+  .side-left footer {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: rgba(255, 224, 70, 0.7); }
 
 .side-right {
   min-height: 100vh;
@@ -143,16 +190,44 @@ div.technology {
     background-color: rgba(255, 255, 255, 0.3); }
 
 @media only screen and (max-width: 1200px) {
-  .side-left .icon-container .icon {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: red; }
-  .side-left .content div .greeting span {
-    font-size: 44px; }
-  .side-left .content div .name h1 {
-    font-size: 52px; }
-  .side-left nav .nav-item {
-    font-size: 14px; } }
+  .side-left {
+    display: block; }
+    .side-left .icon-container .icon {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: red; }
+    .side-left .content div .greeting span {
+      font-size: 44px; }
+    .side-left .content div .name h1 {
+      font-size: 52px; }
+    .side-left nav {
+      padding: 0; }
+      .side-left nav .nav-item {
+        font-size: 14px; } }
+@media only screen and (max-width: 992.5px) {
+  .side-left {
+    display: none; }
+
+  nav.nav-top {
+    display: block; }
+
+  body {
+    margin-left: 0; } }
+@media only screen and (max-width: 560px) {
+  div.greeting {
+    top: 25px !important;
+    left: 20px !important;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 2px 12px 2px 55px !important;
+    border-bottom-right-radius: 32px !important;
+    border-bottom-left-radius: 32px !important;
+    z-index: 0; }
+    div.greeting .title {
+      font-size: 8px !important; }
+
+  a.nav-item {
+    margin: 6px !important; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,8 +6,17 @@ class App{
 			thisPage.addEventListener("click", (event) =>{
 				let page = event.target.dataset.page;
 				let position = document.getElementById("page-"+page);
+
+
+
+				let scrollTo = position.offsetTop;
+
+				if(screen.width < 1200){
+					scrollTo -= 24;
+				}
+
 				$(container).animate({
-					scrollTop: position.offsetTop + 16
+					scrollTop: scrollTo
 				}, 800);
 				// container.scroll({
 				//   top: position.offsetTop, 

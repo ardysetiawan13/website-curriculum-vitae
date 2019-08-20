@@ -13,6 +13,50 @@ body{
 	color: $main-color;
 	margin-left: 45%;
 }
+nav.nav-top{
+	display: none;
+	background-color: $main-bg-color;
+	text-align: right;
+	padding: 4px;
+	padding-right: 16px;
+	.nav-item{
+		margin: 8px;
+		text-decoration: none;
+		font-size: 12px;
+		color: $main-color;
+	}
+
+	div.icon{
+		position: absolute;
+		top: 4px;
+		left: 24px;
+		$icon-diameter: 48px;
+		width: $icon-diameter;
+		height: $icon-diameter;
+		border-radius: $icon-diameter/2;
+		background-image: url("../images/profile.jpg");
+		background-position: center center;
+		background-size: cover;
+		// box-shadow: 2px 4px 16px 2px #000000;
+		border: 4px solid $main-bg-color;
+		z-index: 2;
+	}
+	div.greeting{
+		position: absolute;
+		top: 0px;
+		left: 40px;
+		background-color: $main-bg-color;
+		color: $main-color;
+		padding: 8px 12px 8px 36px;
+		border-bottom-right-radius: 24px;
+		border-bottom-left-radius: 8px;
+		z-index: 1;
+		text-align: center;
+		.title{
+			font-size: 10px;
+		}
+	}
+}
 .page{
 	display: flex;
 	align-items: center;
@@ -58,6 +102,7 @@ table.biodata{
 	tr{
 		td{
 			vertical-align: top;
+			min-width: 100px;
 		}
 		td:nth-child(1){
 			width: 35%;
@@ -74,9 +119,12 @@ table.biodata{
 }
 table.table-legend{
 	tr{
-		td:nth-child(2){
-			text-align: right;
-			width: 24px;
+		td{
+			vertical-align: top;
+			&:nth-child(2){
+				text-align: right;
+				width: 24px;
+			}
 		}
 	}
 }

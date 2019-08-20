@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1200px) {
 	.side-left{
-	
+		display: block;
 		.icon-container{
 			.icon{
 				$icon-diameter: 200px;
@@ -28,13 +28,42 @@
 			}
 		}
 		nav{
-		.nav-item{
-			font-size: 14px;
+			padding: 0;
+			.nav-item{
+				font-size: 14px;
+			}
 		}
 	}
+}
+@media only screen and (max-width: 992.5px) {
+	.side-left{
+		display: none;
+	}
+	nav.nav-top{
+		display: block;
+	}
+	body{
+		margin-left: 0;
 	}
 }
-
+@media only screen and (max-width: 560px) {
+	div.greeting{
+		top: 25px !important;
+		left: 20px !important;
+		font-size: 10px;
+		color: $main-color;
+		padding: 2px 12px 2px 55px !important;
+    	border-bottom-right-radius: 32px !important;
+    	border-bottom-left-radius: 32px !important;
+		z-index: 0;
+		.title{
+			font-size: 8px !important;
+		}
+	}
+	a.nav-item{
+		margin: 6px !important;
+	}
+}
 
 // @media only screen and (max-width: 1200px) {
 // 	.side-left{
