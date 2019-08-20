@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1200px) {
+  .side-left .icon-container .icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: red; }
+  .side-left .content div .greeting span {
+    font-size: 44px; }
+  .side-left .content div .name h1 {
+    font-size: 52px; }
+  .side-left nav .nav-item {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=media-query.css.map */

@@ -1,0 +1,21 @@
+.side-right{
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+	// width: 55%;
+	min-height: 100vh;
+	background-image: url("../images/background.jpg"); 
+	background-size: cover;
+	background-position: center bottom;
+	.background-overlay{
+
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		width: 100%;
+		min-height: 100vh;
+		max-height: 100vh; 
+		overflow-y: auto;
+		background-color: rgba(255,255,255, 0.3);
+	}
+}

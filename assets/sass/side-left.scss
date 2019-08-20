@@ -1,0 +1,70 @@
+.side-left{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 45%;
+	height: 100%;
+	background-color: $main-bg-color;
+	color: $main-color;
+	overflow: auto;
+	
+	.icon-container{
+		display: flex;
+		justify-content: center;
+		margin: 48px 0 28px 0;
+		.icon{
+			$icon-diameter: 200px;
+			width: $icon-diameter;
+			height: $icon-diameter;
+			border-radius: $icon-diameter/2;
+			background-image: url("../images/profile.jpg");
+			background-position: center center;
+			background-size: cover;
+			box-shadow: 2px 4px 16px 2px #000000;
+			// border: 8px solid rgba(3,18,117, 0.5);
+		}
+	}
+
+	.content{
+		padding: 0 64px;
+		display: flex;
+		justify-content: center;
+		div{
+			.greeting span{
+				color: $second-color;
+				font-size: 52px;
+			}
+
+			.name {
+				h1{
+					font-size: 64px;
+					margin: 0;
+				}
+				.title{
+					
+				}
+			}
+
+			.quote{
+				display: flex;
+				justify-content: center;
+				padding: 24px 0;
+				span{
+					font-style: italic;
+				}
+			}
+		}
+	}
+	nav{
+		position: sticky;
+		bottom: 0;
+		padding: 16px;
+		text-align: center;
+		.nav-item{
+			text-decoration: none;
+			font-size: 20px;
+			color: $main-color;
+			margin: 4px 8px;
+		}
+	}
+}

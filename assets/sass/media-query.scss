@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1200px) {
+	.side-left{
+	
+		.icon-container{
+			.icon{
+				$icon-diameter: 200px;
+				width: $icon-diameter;
+				height: $icon-diameter;
+				border-radius: $icon-diameter/2;
+				background-color: red;
+			}
+		}
+
+		.content{
+			div{
+				.greeting span{
+					font-size: 44px;
+				}
+
+				.name {
+					h1{
+						font-size: 52px;
+					}
+					.title{
+						
+					}
+				}
+			}
+		}
+		nav{
+		.nav-item{
+			font-size: 14px;
+		}
+	}
+	}
+}
+
+
+// @media only screen and (max-width: 1200px) {
+// 	.side-left{
+// 		display: none;
+// 	}
+// 	.side-right{
+// 		position: static;
+// 	}
+// }
