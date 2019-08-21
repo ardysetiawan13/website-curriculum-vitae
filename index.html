@@ -6,6 +6,10 @@
 	<meta name="keywords" content="CV, Curriculum Vitae, Resume, Ardy, Ardy Setiawa, Software Engineer">
 	<meta name="author" content="Ardy Setiawan">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="assets/plugins/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/plugins/fontawesome-free-5.10.1-web/css/all.css" rel="stylesheet">
@@ -23,12 +27,12 @@
 </head>
 <body>
 	<nav class="nav-top">
-		<div class="icon">
-			
-		</div>
-		<div class="greeting">
-			<div>Hi, I am <span class="text-yellow">Ardy Setiawan</span></div>
-			<div class="title">Software Engineer</div>
+		<div class="greeting-container">
+			<div class="icon"></div>
+			<div class="greeting">
+				<div><span class="text-yellow">Hi, i am Ardy Setiawan</span></div>
+				<div class="title">Software Engineer</div>
+			</div>
 		</div>
 		<a class="nav-item" href="javascript:;" data-page="aboutme">About Me</a>
 		<a class="nav-item" href="javascript:;" data-page="skills">Skills</a>
@@ -45,7 +49,7 @@
 		<div class="content">
 			<div>
 				<div class="greeting">
-					<span>Hi, I am</span>
+					<span>Hi, i am</span>
 				</div>
 				<div class="name">
 					<h1>Ardy Setiawan</h1>
@@ -65,7 +69,7 @@
 		</nav>
 
 		<footer>
-			created on August 2019 by me
+			Developed on August 2019 by me
 		</footer>
 	</div>
 	<div class="side-right">
@@ -82,7 +86,7 @@
 							</p>
 						</section>
 						<section>
-							<h5>General Informations</h5>
+							<h5>Basic Information</h5>
 							<div class="row">
 								<div class="col">
 									<table class="biodata">
@@ -129,18 +133,26 @@
 						<section>
 							<h5>Education</h5>
 							<div class="row">
-								<div class="col">
+								<div class="col-lg-6">
 									<div class="text-yellow">Bachelor</div>
 									<div>Bachelor Degree of Information System</div>
 									<div>Institute Business and Informatics Stikom Surabaya</div>
 									<div>2011 - 2016</div>
 								</div>
-								<div class="col">
+								<div class="col-lg-6 mt-2 mt-lg-0">
 									<div class="text-yellow">Diploma</div>
 									<div>1 Year Diploma Majoring Informatics Engineering</div>
 									<div>Sepuluh Nopember Institute of Technology, Indonesia</div>
 									<div>2010 - 2011</div>
 								</div>
+							</div>
+						</section>
+						<section>
+							<h5>Social Account</h5>
+							<div class="social-account">
+								<a href="https://www.instagram.com/ardysetiawan13/" target="_blank" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+								<a href="https://linkedin.com/in/ardy" target="_blank" data-toggle="tooltip" title="Linked In"><i class="fab fa-linkedin fa-2x"></i></a>
+								<a href="https://github.com/ardysetiawan13" target="_blank" data-toggle="tooltip" title="Github"><i class="fab fa-github fa-2x"></i></a>
 							</div>
 						</section>
 					</div>
@@ -398,9 +410,12 @@
 					<div class="content">
 						<section>
 							<div class="d-flex align-items-center">
-								Curriculum Vitae (updated on 20 August 2019)
+								<div class="lh-100">
+									Curriculum Vitae<br>
+									<span class="font-10 text-yellow">updated on 20 August 2019</span>
+								</div>
 								<button type="button" id="btnDownloadCv" class="btn btn-sm btn-light ml-auto">
-									<i class="fas fa-download"></i> Download
+									<i class="fas fa-download"></i>
 								</button>
 							</div>
 						</section>

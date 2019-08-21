@@ -12,6 +12,7 @@
 		}
 
 		.content{
+			padding: 0 58px;
 			div{
 				.greeting span{
 					font-size: 44px;
@@ -19,7 +20,7 @@
 
 				.name {
 					h1{
-						font-size: 52px;
+						font-size: 50px;
 					}
 					.title{
 						
@@ -28,6 +29,7 @@
 			}
 		}
 		nav{
+			margin-top: 16px;
 			padding: 0;
 			.nav-item{
 				font-size: 14px;
@@ -46,22 +48,36 @@
 		margin-left: 0;
 	}
 }
-@media only screen and (max-width: 560px) {
-	div.greeting{
-		top: 25px !important;
-		left: 20px !important;
-		font-size: 10px;
-		color: $main-color;
-		padding: 2px 12px 2px 55px !important;
-    	border-bottom-right-radius: 32px !important;
-    	border-bottom-left-radius: 32px !important;
-		z-index: 0;
-		.title{
-			font-size: 8px !important;
+@media only screen and (max-width: 600px) {
+	
+	nav.nav-top{
+		div.icon{
+			top: 16.5px;
+    		left: 15px;
+    		width: 40px;
+		    height: 40px;
+		    border-radius: 20px;
+			border: 2px solid $main-bg-color;
 		}
-	}
-	a.nav-item{
-		margin: 6px !important;
+		div.greeting{
+		    top: 31px;
+		    left: 12px;
+		    font-size: 10px;
+			color: $main-color;
+		    padding: 0px 10px 2px 48px!important;
+		    border-bottom-right-radius: 24px!important;
+		    border-bottom-left-radius: 24px!important;
+		    z-index: 1;
+			.title{
+				font-size: 8px !important;
+			}
+		}
+		padding-right: 8px;
+		a.nav-item{
+			margin: 4px !important;
+			font-size: 14px;
+
+		}
 	}
 }
 

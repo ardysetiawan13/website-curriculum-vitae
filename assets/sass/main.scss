@@ -13,17 +13,24 @@ body{
 	color: $main-color;
 	margin-left: 45%;
 }
+.font-10{
+	font-size: 10px;
+}
+.lh-100{
+	line-height: 100%;
+}
 nav.nav-top{
 	display: none;
 	background-color: $main-bg-color;
 	text-align: right;
-	padding: 4px;
+	padding: 8px 4px;
 	padding-right: 16px;
 	.nav-item{
 		margin: 8px;
 		text-decoration: none;
-		font-size: 12px;
+		font-size: 16px;
 		color: $main-color;
+		text-align: center;
 	}
 
 	div.icon{
@@ -117,6 +124,14 @@ table.biodata{
 		text-decoration: none;
 	}
 }
+div.social-account{
+	a{
+		color: $main-color;
+		& > i{
+			margin: 4px 8px;
+		}
+	}
+}
 table.table-legend{
 	tr{
 		td{
@@ -140,9 +155,11 @@ table.table-legend{
 		}
 		
 		& > div{
+			display: flex;
+			align-items: center;
 			width: 33.33%;
 			&:nth-child(2){
-				text-align: center;
+				justify-content: center;
 			}
 			&:nth-child(3){
 				text-align: right;
@@ -168,3 +185,8 @@ div.technology{
 @import "side-left";
 @import "side-right";
 @import "media-query";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
