@@ -162,7 +162,7 @@ table.table-legend{
 				justify-content: center;
 			}
 			&:nth-child(3){
-				text-align: right;
+				justify-content: flex-end;
 			}
 		}
 	}
